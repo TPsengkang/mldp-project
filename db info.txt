@@ -1,3 +1,0 @@
-https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
-
-code to import dataset
