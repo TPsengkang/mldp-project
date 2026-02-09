@@ -1,7 +1,6 @@
 import streamlit as st
 import base64
 from pathlib import Path
-from app_pages import pc_price_predictor
 def _img_to_base64(path: Path) -> str:
     return base64.b64encode(path.read_bytes()).decode("utf-8")
 
@@ -17,6 +16,7 @@ def show():
 
     if st.button("❇️ Start Predicting Your Custom Gaming PC Price Now!", use_container_width=True):
         st.session_state.page = "PC Price Predictor"
+        st.rerun()
 
     st.write("Visit the About page to learn more about this application and its features.")
 
